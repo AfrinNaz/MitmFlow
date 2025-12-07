@@ -11,23 +11,7 @@ This repository accompanies the paper:
 
 > “Privacy Sentinel: Real-Time Detection of Sensitive Data Leaks in Web Traffic Using Network Interception and SSE Alerts”
 
-## Project structure
-
-```text
-MitmFlow/
-├─ mitmproxy-addon/
-│  └─ mitm_alerts_addon.py    # mitmproxy add-on with PII detection + SSE server
-├─ extension/
-│  ├─ manifest.json           # MV3 manifest
-│  ├─ background.js           # SSE client, notifications, badge logic
-│  ├─ content.js              # in-page toast and user-activity tracking
-│  ├─ popup.html              # extension popup UI
-│  ├─ popup.js                # popup logic (last alert, etc.)
-│  └─ icons/
-│     └─ icon48.png
-└─ docs/
-   ├─ architecture.png        # architecture / detection diagram
-   └─ screenshots/            # example alerts and SSE output 
+ 
 Requirements
 
 Python 3
@@ -36,7 +20,7 @@ mitmproxy
 
 Chrome or Chromium-based browser with developer mode (for loading the extension)
 
-Usage (short)
+Usage
 
 1.Start mitmproxy with the add-on: 
 mitmproxy -s mitmproxy-addon/mitm_alerts_addon.py
