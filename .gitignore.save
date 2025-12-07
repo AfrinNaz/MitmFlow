@@ -1,0 +1,25 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Mitmproxy / certificates (IMPORTANT)
+*.pem
+*.key
+mitmproxy-ca*
+certs/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+
+# Temporary files
+tmp/

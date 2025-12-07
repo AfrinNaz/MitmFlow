@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Privacy Simple Watcher</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 12px; width: 280px; }
+      h2 { font-size: 16px; margin: 0 0 8px 0; }
+      .alert { border: 1px solid #ddd; padding: 8px; border-radius: 6px; background:#f9f9f9 }
+      .type { font-weight: bold; color: #d93025; }
+      .masked { font-family: monospace; margin-top:6px; display:block; }
+      .none { color: #777; }
+      button { margin-top:10px; padding:6px 10px; }
+    </style>
+  </head>
+  <body>
+    <h2>Privacy Simple Watcher</h2>
+    <div id="content">
+      <div class="none">No recent alerts</div>
+    </div>
+    <button id="refresh">Refresh</button>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
