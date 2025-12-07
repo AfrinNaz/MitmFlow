@@ -12,7 +12,7 @@ This repository accompanies the paper:
 > “Privacy Sentinel: Real-Time Detection of Sensitive Data Leaks in Web Traffic Using Network Interception and SSE Alerts”
 
  
-Requirements
+#Requirements
 
 Python 3
 
@@ -20,7 +20,7 @@ mitmproxy
 
 Chrome or Chromium-based browser with developer mode (for loading the extension)
 
-Usage
+#Usage
 
 1.Start mitmproxy with the add-on: 
 mitmproxy -s mitmproxy-addon/mitm_alerts_addon.py
@@ -30,7 +30,7 @@ mitmproxy -s mitmproxy-addon/mitm_alerts_addon.py
 4. Browse target sites (e.g., medical / pharmacy / municipal). When emails, Canadian phone numbers,
 or postal codes are detected, alerts appear as:desktop notifications, and an in-page toast “Network leak detected
 
-Disclaimer
+#Disclaimer
 
 MitmFlow is a research and educational tool.
 Use it only on traffic you are legally allowed to inspect and in controlled environments.
