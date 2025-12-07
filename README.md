@@ -28,3 +28,26 @@ MitmFlow/
 └─ docs/
    ├─ architecture.png        # architecture / detection diagram
    └─ screenshots/            # example alerts and SSE output 
+Requirements
+
+Python 3
+
+mitmproxy
+
+Chrome or Chromium-based browser with developer mode (for loading the extension)
+
+Usage (short)
+
+1.Start mitmproxy with the add-on: 
+mitmproxy -s mitmproxy-addon/mitm_alerts_addon.py
+
+2. Configure your browser to use the mitmproxy proxy and trust the mitmproxy CA certificate.
+3. Load the Chrome extension in developer mode from the extension/ folder.
+4. Browse target sites (e.g., medical / pharmacy / municipal). When emails, Canadian phone numbers,
+or postal codes are detected, alerts appear as:desktop notifications, and an in-page toast “Network leak detected
+
+Disclaimer
+
+MitmFlow is a research and educational tool.
+Use it only on traffic you are legally allowed to inspect and in controlled environments.
+The author assumes no responsibility for misuse.
