@@ -134,6 +134,11 @@ b. In-page warning banner
 
 c. Alert listed in the extension popup
 
+Browse target sites (e.g., medical / pharmacy / municipal). When emails, Canadian phone numbers, or postal codes are detected, alerts appear as:
+
+desktop notifications, and
+
+an in-page toast: “Network leak detected”.
 ---
 
 ## Noise Filtering
