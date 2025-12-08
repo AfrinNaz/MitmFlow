@@ -149,3 +149,15 @@ Common analytics and tracking domains (e.g., Google Analytics, Facebook) are fil
 | Data leaked via medical website   | `docs/screenshots/medical_test.png`   |
 | Data leaked via pharmacy website  | `docs/screenshots/pharmacy_test.png` |
 | Data leaked via municipal website  | `docs/screenshots/municipal_test.png`  |
+
+
+
+## Limitations
+
+Regex-based detection may produce false positives
+
+HTTPS inspection requires trusted CA installation
+
+Currently focused on Canadian identifiers
+
+Designed as a research prototype, not a production IDS
