@@ -82,11 +82,6 @@ Basic knowledge of HTTP/HTTPS proxy configuration
 git clone https://github.com/AfrinNaz/MitmFlow.git
 cd MitmFlow
 
-Installation
-1. Clone the repository:
-git clone https://github.com/AfrinNaz/MitmFlow.git
-cd MitmFlow
-
 2. Install mitmproxy:
 pip install mitmproxy
 
