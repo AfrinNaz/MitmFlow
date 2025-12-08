@@ -76,7 +76,7 @@ Chrome or any Chromium-based browser
 
 Basic knowledge of HTTP/HTTPS proxy configuration
 
-
+---
 ## Installation
 1. Clone the repository
 git clone https://github.com/AfrinNaz/MitmFlow.git
@@ -85,6 +85,7 @@ cd MitmFlow
 2. Install mitmproxy:
 pip install mitmproxy
 
+---
 
 ## Usage
 Step 1: Start mitmproxy with the add-on:
@@ -129,3 +130,5 @@ a. Desktop browser notification
 b. In-page warning banner
 
 c. Alert listed in the extension popup
+
+---
