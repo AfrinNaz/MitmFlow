@@ -67,13 +67,13 @@ MitmFlow/
 
 ## Requirements
 
-Python 3.8+
+1.Python 3.8+
 
-mitmproxy
+2.mitmproxy
 
-Chrome or any Chromium-based browser
+3.Chrome or any Chromium-based browser
 
-Basic knowledge of HTTP/HTTPS proxy configuration
+4.Basic knowledge of HTTP/HTTPS proxy configuration
 
 ---
 ## Installation
