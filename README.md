@@ -144,8 +144,8 @@ Common analytics and tracking domains (e.g., Google Analytics, Facebook) are fil
 
 ## Screenshots
 
-| Scenario                      | Example                             |
-| ----------------------------- | ----------------------------------- |
-| Email leaked via contact form | `docs/screenshots/email-leak.png`   |
-| Phone & postal code detected  | `docs/screenshots/phone-postal.png` |
-| Browser popup alert           | `docs/screenshots/popup-alert.png`  |
+| Scenario                          | Example                             |
+| -----------------------------     | ----------------------------------- |
+| Data leaked via medical website   | `docs/screenshots/medical_test.png`   |
+| Data leaked via pharmacy website  | `docs/screenshots/pharmacy_test.png` |
+| Data leaked via municipal website  | `docs/screenshots/municipal_test.png`  |
