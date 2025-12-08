@@ -135,4 +135,17 @@ c. Alert listed in the extension popup
 
 ---
 
+## Noise Filtering
 
+Common analytics and tracking domains (e.g., Google Analytics, Facebook) are filtered in background.js to reduce alert noise.
+
+
+---
+
+## Screenshots
+
+| Scenario                      | Example                             |
+| ----------------------------- | ----------------------------------- |
+| Email leaked via contact form | `docs/screenshots/email-leak.png`   |
+| Phone & postal code detected  | `docs/screenshots/phone-postal.png` |
+| Browser popup alert           | `docs/screenshots/popup-alert.png`  |
