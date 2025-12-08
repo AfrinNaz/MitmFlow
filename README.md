@@ -99,3 +99,38 @@ mitmproxy -s mitmproxy-addon/mitm_alerts_addon.py
 By default, the SSE server starts on:
 
 http://localhost:5000
+
+
+Step 2: Configure your browser
+
+1) Set your browser’s proxy to localhost:8080
+
+2) Visit http://mitm.it and install the mitmproxy CA certificate
+
+3) Trust the certificate in your OS/browser
+
+
+Step 3: Load the Chrome extension
+
+1) Open Chrome and go to: chrome://extensions
+
+2) Enable Developer mode
+
+3) Click Load unpacked
+
+4) Select the extension/ directory
+
+
+Step 4: Test
+
+Browse websites with input forms (e.g., contact forms, pharmacy or medical sites)
+
+Submit an email, phone number, or postal code
+
+You will see:
+
+a. Desktop browser notification
+
+b. In-page warning banner
+
+c. Alert listed in the extension popup
