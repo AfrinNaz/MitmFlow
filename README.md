@@ -46,7 +46,7 @@ MitmFlow uses a hybrid architecture:
 
 ## Repository Structure
 
-
+---text
 MitmFlow/
 ├── mitmproxy-addon/
 │   └── mitm_alerts_addon.py     # mitmproxy add-on + SSE server
@@ -64,7 +64,7 @@ MitmFlow/
 ├── LICENSE
 └── .gitignore
 
-
+---
 
 ## Requirements
 
@@ -75,3 +75,9 @@ mitmproxy
 Chrome or any Chromium-based browser
 
 Basic knowledge of HTTP/HTTPS proxy configuration
+
+
+## Installation
+1. Clone the repository
+git clone https://github.com/AfrinNaz/MitmFlow.git
+cd MitmFlow
