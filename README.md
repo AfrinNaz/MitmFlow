@@ -150,13 +150,6 @@ Common analytics and tracking domains (e.g., Google Analytics, Facebook) are fil
 | Data leaked via pharmacy website | ![](docs/screenshots/pharmacy_test.png) |
 | Data leaked via municipal website | ![](docs/screenshots/municipal_test.png) |
 
-## Screenshots
-
-| Scenario | Example |
-|--------|--------|
-| Data leaked via medical website | <img src="docs/screenshots/medical_test.png" width="350"/> |
-| Data leaked via pharmacy website | <img src="docs/screenshots/pharmacy_test.png" width="350"/> |
-| Data leaked via municipal website | <img src="docs/screenshots/municipal_test.png" width="350"/> |
 
 
 ## Limitations
