@@ -154,10 +154,10 @@ Common analytics and tracking domains (e.g., Google Analytics, Facebook) are fil
 
 ## Limitations
 
-Regex-based detection may produce false positives
+1. Regex-based detection may produce false positives
 
-HTTPS inspection requires trusted CA installation
+2. HTTPS inspection requires trusted CA installation
 
-Currently focused on Canadian identifiers
+3. Currently focused on Canadian identifiers
 
-Designed as a research prototype, not a production IDS
+4. Designed as a research prototype, not a production IDS
