@@ -1,37 +1,77 @@
 # MitmFlow
 
-MitmFlow is a research prototype for **real-time detection of sensitive data leaks** in web traffic.
-It combines:
+**MitmFlow** is a research prototype for **real-time detection of sensitive personal data leaks in web traffic**.  
+It combines a **mitmproxy-based network interceptor** with a **Chrome browser extension** to detect, analyze, and notify users when personally identifiable information (PII) is leaked to third parties via HTTP/HTTPS requests.
 
-- a `mitmproxy` Python add-on (`mitm_alerts_addon.py`) that scans outbound HTTP/HTTPS requests for
-  emails, Canadian phone numbers, and Canadian postal codes; and
-- a Chrome/Chromium extension that receives alerts via **Server-Sent Events (SSE)** and notifies the user.
+This project was developed as part of an academic research effort focused on **privacy-aware network monitoring and user-side alerting**.
 
-This repository accompanies the paper:
+---
 
-> “Privacy Sentinel: Real-Time Detection of Sensitive Data Leaks in Web Traffic Using Network Interception and SSE Alerts”
+## Key Features
 
- 
-#Requirements
+- **Real-time PII leak detection** in outbound web traffic
+- Detects:
+  - Email addresses
+  - Canadian phone numbers (with province mapping)
+  - Canadian postal codes (FSA-based province inference)
+- **Sensitive data masking** before sending alerts to the client
+- **Server-Sent Events (SSE)** for low-latency browser notifications
+- **De-duplication logic** to prevent alert spam
+- **In-page visual warning** when a leak is detected
+- **Browser notifications + popup history**
+- Noise suppression for common tracking and analytics domains
 
-Python 3
+---
 
-mitmproxy
+## System Architecture
 
-Chrome or Chromium-based browser with developer mode (for loading the extension)
+MitmFlow uses a hybrid architecture:
 
-#Usage
+1. **mitmproxy add-on (Python)**  
+   - Intercepts HTTP/HTTPS requests
+   - Inspects URLs, headers, and body content
+   - Identifies PII via regex-based detection
+   - Masks sensitive values
+   - Streams alerts via an embedded SSE server
 
-1.Start mitmproxy with the add-on: 
-mitmproxy -s mitmproxy-addon/mitm_alerts_addon.py
+2. **Chrome Extension**
+   - Listens to SSE alerts
+   - Displays system notifications
+   - Shows alerts in an extension popup
+   - Injects in-page warning banners
 
-2. Configure your browser to use the mitmproxy proxy and trust the mitmproxy CA certificate.
-3. Load the Chrome extension in developer mode from the extension/ folder.
-4. Browse target sites (e.g., medical / pharmacy / municipal). When emails, Canadian phone numbers,
-or postal codes are detected, alerts appear as:desktop notifications, and an in-page toast “Network leak detected
+![Architecture Diagram](docs/architecture.png)
+
+---
+
+## Repository Structure
+
+```text
+MitmFlow/
+├── mitmproxy-addon/
+│   └── mitm_alerts_addon.py     # mitmproxy add-on + SSE server
+├── extension/
+│   ├── manifest.json
+│   ├── background.js            # SSE client + notification logic
+│   ├── content.js               # In-page visual alerts
+│   ├── popup.html
+│   ├── popup.js
+│   └── icons/
+├── docs/
+│   ├── architecture.png
+│   └── screenshots/
+├── README.md
+├── LICENSE
+└── .gitignore
 
 #Disclaimer
 
-MitmFlow is a research and educational tool.
-Use it only on traffic you are legally allowed to inspect and in controlled environments.
-The author assumes no responsibility for misuse.
+Requirements
+
+Python 3.8+
+
+mitmproxy
+
+Chrome or any Chromium-based browser
+
+Basic knowledge of HTTP/HTTPS proxy configuration
