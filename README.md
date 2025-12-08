@@ -64,8 +64,9 @@ cd MitmFlow
 ```
 
 2. Install mitmproxy:
+```bash
 pip install mitmproxy
-
+```
 ---
 
 ## Usage
