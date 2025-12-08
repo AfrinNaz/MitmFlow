@@ -46,7 +46,7 @@ MitmFlow uses a hybrid architecture:
 
 ## Repository Structure
 
-```text
+
 MitmFlow/
 ├── mitmproxy-addon/
 │   └── mitm_alerts_addon.py     # mitmproxy add-on + SSE server
@@ -64,9 +64,9 @@ MitmFlow/
 ├── LICENSE
 └── .gitignore
 
-#Disclaimer
 
-Requirements
+
+## Requirements
 
 Python 3.8+
 
