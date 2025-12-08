@@ -161,3 +161,9 @@ Common analytics and tracking domains (e.g., Google Analytics, Facebook) are fil
 3. Currently focused on Canadian identifiers
 
 4. Designed as a research prototype, not a production IDS
+
+## Disclaimer
+
+MitmFlow is a research and educational tool.
+Use it only on traffic you are legally allowed to inspect and in controlled environments.
+The author assumes no responsibility for misuse.
