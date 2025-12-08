@@ -44,6 +44,26 @@ MitmFlow uses a hybrid architecture:
 
 ---
 
+## Repository Structure
+
+```text
+MitmFlow/
+├── mitmproxy-addon/
+│   └── mitm_alerts_addon.py   # mitmproxy add-on + SSE server
+├── extension/
+│   ├── manifest.json
+│   ├── background.js          # SSE client + notification logic
+│   ├── content.js             # In-page visual alerts
+│   ├── popup.html
+│   ├── popup.js
+│   └── icons/
+├── docs/
+│   ├── architecture.png
+│   └── screenshots/
+├── README.md
+├── LICENSE
+└── .gitignore
+```
 
 ## Requirements
 
@@ -116,22 +136,3 @@ c. Alert listed in the extension popup
 ---
 
 
-## Repository Structure
-
-```text
-MitmFlow/
-├── mitmproxy-addon/
-│   └── mitm_alerts_addon.py   # mitmproxy add-on + SSE server
-├── extension/
-│   ├── manifest.json
-│   ├── background.js          # SSE client + notification logic
-│   ├── content.js             # In-page visual alerts
-│   ├── popup.html
-│   ├── popup.js
-│   └── icons/
-├── docs/
-│   ├── architecture.png
-│   └── screenshots/
-├── README.md
-├── LICENSE
-└── .gitignore
