@@ -81,3 +81,21 @@ Basic knowledge of HTTP/HTTPS proxy configuration
 1. Clone the repository
 git clone https://github.com/AfrinNaz/MitmFlow.git
 cd MitmFlow
+
+Installation
+1. Clone the repository:
+git clone https://github.com/AfrinNaz/MitmFlow.git
+cd MitmFlow
+
+2. Install mitmproxy:
+pip install mitmproxy
+
+
+## Usage
+Step 1: Start mitmproxy with the add-on:
+mitmproxy -s mitmproxy-addon/mitm_alerts_addon.py
+
+
+By default, the SSE server starts on:
+
+http://localhost:5000
