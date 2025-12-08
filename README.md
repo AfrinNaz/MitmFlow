@@ -91,8 +91,9 @@ pip install mitmproxy
 
 ## Usage
 Step 1: Start mitmproxy with the add-on:
+```bash
 mitmproxy -s mitmproxy-addon/mitm_alerts_addon.py
-
+```
 
 By default, the SSE server starts on:
 
