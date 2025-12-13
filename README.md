@@ -157,7 +157,14 @@ Common analytics and tracking domains (e.g., Google Analytics, Facebook) are fil
 
 The file `docs/evaluated_websites.csv` contains the list of websites
 evaluated in the study, along with their categories and testing outcomes
-(Yes / No / Not Testable).
+(Yes / No / Not Testable). Only publicly accessible, testable workflows
+were included.
+
+## Reproducibility
+
+All experiments reported in the paper were conducted using the code and
+configuration provided in this repository. The supplementary dataset lists
+the evaluated websites but does not include any raw traffic or sensitive data.
 
 
 ## Limitations
