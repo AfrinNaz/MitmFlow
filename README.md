@@ -153,6 +153,11 @@ Common analytics and tracking domains (e.g., Google Analytics, Facebook) are fil
 | Data leaked via pharmacy website | ![](docs/screenshots/pharmacy_test.png) |
 | Data leaked via municipal website | ![](docs/screenshots/municipal_test.png) |
 
+## Supplementary Data
+
+The file `docs/evaluated_websites.csv` contains the list of websites
+evaluated in the study, along with their categories and testing outcomes
+(Yes / No / Not Testable).
 
 
 ## Limitations
